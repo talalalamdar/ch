@@ -1,0 +1,41 @@
+.pagination__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  font-size: 14px;
+  font-weight: bold;
+  margin: 8px 0;
+}
+
+.pagination__item {
+  margin-right: 2px;
+  padding: 4px 8px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.pagination__item:hover {
+  background: cadetblue;
+}
+
+._is_selected {
+  background: blue;
+}
+
+.pagination__arrow {
+  padding: 4px 8px;
+  font-weight: bold;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-right: 2px;
+}
+
+.pagination__arrow:hover {
+  background: cadetblue;
+}
+
+@media screen and (min-width: 768px) {
+  .pagination__wrapper {
+    flex-wrap: nowrap;
+  }
+}
